@@ -2,17 +2,17 @@
 
 @section('content')
     <h1>This is about page</h1>
-{{ $x = 1 }}
+{{-- {{ $x = 1 }}
 @if ($x > 2)
     <h3>x is greater than 2</h3>
 @elseif($x < 10)
     <h3>x is less than 10 </h3>
 @else
     <h3>All conditions does not match</h3>
-@endif
+@endif --}}
 
 {{-- unless = if not --}}
-@unless (empty($name))
+{{-- @unless (empty($name))
     <h3>Name is not empty</h3>    
 @endunless
 
@@ -34,5 +34,19 @@
     @default
     <h3>No one selected</h3>
         
-@endswitch
+@endswitch --}}
+
+{{-- @for ($i = 0; $i < 5; $i++)
+    <h2> i = {{  $i }}</h2>
+@endfor
+
+@foreach ($names as $name)
+    <h3>each name: {{ $name }}</h3>
+@endforeach --}}
+{{-- @forelse ($names as $name)
+    <h3>each name: {{ $name }}</h3>
+@empty
+    <h3>The array empty</h3>
+@endforelse --}}
+
 @endsection
