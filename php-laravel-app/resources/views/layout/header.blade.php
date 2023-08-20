@@ -20,9 +20,9 @@
           </li>
           <li class="nav-item">
             <a 
-            class="nav-link {{ request() -> is('contact') ? 'active' : '' }}" 
+            class="nav-link {{ request() -> is('posts') ? 'active' : '' }}" 
             aria-current="page" 
-            href="contact">Contact</a>
+            href="posts">Posts</a>
           </li>
           
         </ul>
